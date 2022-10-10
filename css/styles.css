@@ -5,15 +5,17 @@
 }
 body {
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--primary-color);
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 .logo {
   font-family: Raleway;
   font-style: 700;
   font-size: 26px;
-  line-height: 1, 19;
-  letter-spacing: 3%;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .first-part {
@@ -27,7 +29,7 @@ body {
 }
 
 .site-link {
-  font-style: 500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -39,12 +41,12 @@ body {
 }
 .link:hover,
 .link:focus,
-.current-link,
-.mail-link {
+.current-link {
   color: var(--accent-color);
 }
 
-.tel-link {
+.tel-link,
+.mail-link {
   color: var(--second-color);
 }
 .hero {
@@ -56,6 +58,7 @@ body {
   font-size: 44px;
   line-height: 1.5;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -71,6 +74,10 @@ body {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #188ce8;
+}
 /*button of the portfolio page*/
 .btn-header {
   font-family: 'Roboto';
@@ -80,13 +87,13 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: F5F4FA;
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
-  cursor: pointer;
 }
 .current-btn {
   color: #ffffff;
@@ -106,27 +113,24 @@ body {
   overflow: hidden;
 }
 .feature-list-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .feature-list-item {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 3%;
+  line-height: 1.71;
   color: var(--second-color);
 }
 .list {
   list-style: none;
 }
+.team {
+  background-color: #f5f4fa;
+}
 .work-title,
 .team-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -134,7 +138,6 @@ body {
   letter-spacing: 0.03em;
 }
 .team-member {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -142,7 +145,6 @@ body {
 }
 .team-position,
 .project-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -159,9 +161,13 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+.address-second {
+  color: rgba(255, 255, 255, 0.6);
+}
 .footer-address {
   background-color: #2f303a;
 }
+
 .project-title {
   font-style: normal;
   font-weight: 700;
